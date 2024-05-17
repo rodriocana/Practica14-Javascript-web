@@ -1,0 +1,93 @@
+ body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #333; /* Color de fondo del SideNav */
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 20px;
+        }
+
+        .sidenav a {
+            padding: 10px 8px 10px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #f2f2f2;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        #main {
+            transition: margin-left .5s;
+            padding: 20px;
+        }
+
+        #tablas {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        #tablas li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+
+        #tablas li a {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        #tablas li a:hover {
+            background-color: #45a049;
+        }
+
+        .boton {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            background-color: #008CBA;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            position: fixed;
+            bottom: 20px; /* Distancia desde la parte inferior */
+            left: 20px; /* Distancia desde el lado izquierdo */
+        }
+
+        .boton:hover {
+            background-color: #0073b9;
+        }
+
+        .icono {
+            font-size: 18px;
+            font-weight: bold;
+        }

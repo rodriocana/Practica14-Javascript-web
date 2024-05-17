@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <link rel="stylesheet" href="flip-master\example\flip\flip.min.css" /> 
+        <link rel="stylesheet" type="text/css" href="ESTILOS/Index.css" title="style"><!-- aqui le paso el css del contador  -->   
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario de Registro</title>
+
+    </head>
+    <body>
+
+        <div class="container">
+            <h2>Formulario de Registro</h2>
+            <form action="Indice.jsp" method='POST' onsubmit="return validarFormulario()">   <!-- hay que llamar a la funcion validaFormulario del script JS -->   
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+
+                <label for="teléfono">Teléfono:</label>
+                <input type="text" id="telefono" name="telefono" placeholder="Telefono de contacto" required>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="Email" required>
+
+                <label for="GradoSuperior">Grado Superior</label>
+                <select id="GradoSuperior" name="GradoSuperior" required>
+                    <option value="">Selecciona tu grado superior</option>
+                    <option value="Desarrollo de aplicaciones Multiplataformas">Desarrollo de aplicaciones Multiplataformas</option>
+                    <option value="Desarrollo de aplicaciones Web">Desarrollo de aplicaciones Web</option>
+                    <option value="Administración de Sistemas Informáticos en Red">Administración de Sistemas Informáticos en Red</option>
+                    <!-- Puedes continuar añadiendo opciones para todas las edades -->
+                </select>
+
+                <input type="submit" value="Enviar">
+            </form>
+            <div class="info">
+                <p>Autor: Rodrigo Ocaña Martin-Vazquez</p>
+                <p>Fecha de creación: 13 de mayo de 2024</p>
+                <p>Versión: 1.0</p>
+            </div>
+        </div>
+
+        <!--Este es el div del cartel de letras de javascript  -->   
+
+        <div class="tick" data-did-init="handleTickInit">
+            <div data-repeat="true" data-layout="horizontal fit" data-transform="upper -> split -> delay(random, 100, 150)">
+                <span data-view="flip" data-transform="ascii -> arrive -> round -> char(a-zA-Z)" class="tick-char"></span>
+            </div>
+        </div>
+
+        <!--Aqui empeza el script de javascript -->   
+
+
+        <script src="ValidadorJs.js"></script>
+        <script src="CartelesJs.js"></script>
+        <script src="flip-master\example\flip\flip.min.js"></script>  <!--aqui le paso el archivo javascript del contador  -->   
+
+    </body>
+</html>

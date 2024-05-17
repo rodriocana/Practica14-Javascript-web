@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../ESTILOS/Botones.css" media="screen">
+    <title>REACT.JS</title>
+    <style>
+        body {
+            background-color: #95B9C7;
+        }
+    </style>
+</head>
+<body>
+    <br><br>
+    <center><img src="../imagenes/ract.png" height="150" width="340"></center>
+    <br><br>
+    <blockquote>
+        <li><b><u>¿Qué es React.Js?</u></b></li>
+        <br><br>
+        <p><b>React.Js</b> es una de las librerías más populares de JavaScript para el desarrollo de aplicaciones móviles y web. Creada por Facebook, React contiene una colección de fragmentos de código JavaScript reutilizables utilizados para crear interfaces de usuario (UI) llamadas componentes.
+            <br><br>
+            Es importante señalar que ReactJS no es un framework de JavaScript. Esto porque sólo es responsable de renderizar los componentes de la capa de vista de una aplicación. React es una alternativa a frameworks como Angular y Vue, que permiten crear funciones complejas.
+            <br><br>
+            React tiene algunas características principales que la hacen destacar de otras librerías de JavaScript. En las siguientes secciones presentaremos estas características y te explicaremos cómo contribuyen al desarrollo de aplicaciones móviles y web.
+        </p>
+        <img src="../imagenes/reactimagen.jpg" height="400" width="600">
+        <br><br>
+        <li><b><u>JSX</u></b></li>
+       
+        <p>
+            JSX es una extensión de la sintaxis de JavaScript utilizada en la creación de elementos de React. Los desarrolladores la emplean para incrustar código HTML en objetos JavaScript. Ya que JSX acepta expresiones válidas de JavaScript e incrustación de funciones, puede simplificar las estructuras de código complejas.
+            <br><br>
+            JSX también ayuda a combatir los ataques Cross-Site Scripting (XSS). Por defecto, React DOM convierte los valores incrustados en JSX en cadenas antes de renderizarlos. Por consiguiente, terceros no pueden inyectar código extra a través de la entrada del usuario a menos que esté explícitamente escrito en la aplicación.
+            <br><br>
+            <li><b><u>Virtual Dom</u></b></li>
+            <br><br>
+            El Modelo de Objetos del Documento (DOM) presenta una página web en una estructura de árbol de datos. ReactJS almacena árboles DOM virtuales en la memoria. Al hacerlo, React puede aplicar actualizaciones a partes específicas del árbol de datos, lo que es más rápido que volver a renderizar la totalidad del árbol DOM.
+            <br><br>
+            Cada vez que haya un cambio en los datos, ReactJS generará un nuevo árbol de DOM virtual y lo comparará con el anterior para encontrar la forma más rápida de implementar los cambios en el DOM real. Este proceso se conoce como diffing.
+            <br><br>
+            Al asegurarse de que la manipulación de la interfaz de usuario sólo afecta a secciones específicas del árbol real del DOM, renderizar la versión actualizada tarda menos tiempo y utiliza menos recursos. Esta práctica beneficia enormemente a los proyectos grandes con una interacción intensa con el usuario.
+            <br><br>
+            <li><b><u>Redux</u></b></li>
+            <br><br>
+            La librería de gestión de estado Redux tiene un almacén centralizado que mantiene el árbol de estado de una aplicación predecible. La librería también reduce la inconsistencia de los datos al evitar que dos componentes actualicen el estado de la aplicación simultáneamente.
+            <br><br>
+            La arquitectura de Redux admite el registro de errores para facilitar la depuración y tiene un método de organización de código estricto, lo que simplifica el mantenimiento. Además, cuenta con un gran número de complementos y es compatible con todas las capas de las interfaces de usuario.            <br><br>
+            
+            </p>
+        
+        <center>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/tVBb79WLScc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </center>
+      
+    </blockquote>
+    <br><br>
+    <center><p><a class="boton" href="../principal.html">Volver atrás</a></p></center>
+</body>
+</html>

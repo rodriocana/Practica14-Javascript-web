@@ -1,0 +1,15 @@
+   .boton {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 10px 20px;
+            background-color: #008CBA;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+            position: fixed;
+            bottom: 20px; /* Distancia desde la parte inferior */
+            left: 20px; /* Distancia desde el lado izquierdo */
+        }
+
+        .boton:hover {
+            background-color: #0073b9;
+        }
